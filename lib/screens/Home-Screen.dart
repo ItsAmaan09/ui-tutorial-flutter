@@ -11,7 +11,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: LoginScreen(),
+        child: Scaffold(
+          backgroundColor: Colors.white,
+        ),
       ),
     );
   }
