@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tutorial/pages/Main-Page.dart';
 import 'package:tutorial/screens/Home-Screen.dart';
+import 'package:tutorial/screens/Login-Screen-Update.dart';
 import 'package:tutorial/widgets/row-widget.dart';
 
 void main() {
@@ -13,7 +15,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen()
+      home: LoginScreenUpdate()
     );
   }
 }
