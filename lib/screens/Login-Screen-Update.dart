@@ -13,7 +13,7 @@ class _LoginScreenState extends State<LoginScreenUpdate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white,),
+      // appBar: AppBar(backgroundColor: Colors.white,),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         padding: EdgeInsets.all(24.0),
@@ -64,7 +64,10 @@ class _LoginScreenState extends State<LoginScreenUpdate> {
             SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage()));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MainPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green,
@@ -88,10 +91,7 @@ class _LoginScreenState extends State<LoginScreenUpdate> {
                       MaterialPageRoute(builder: (context) => SignupScreen()),
                     );
                   },
-                  child: Text(
-                    "Sign Up",
-                    style: TextStyle(color: Colors.blue),
-                  ),
+                  child: Text("Sign Up", style: TextStyle(color: Colors.blue)),
                 ),
               ],
             ),
@@ -113,11 +113,7 @@ class _LoginScreenState extends State<LoginScreenUpdate> {
                   ),
                 ),
                 Expanded(
-                  child: Divider(
-                    thickness: 1,
-                    color: Colors.grey,
-                    indent: 10,
-                  ),
+                  child: Divider(thickness: 1, color: Colors.grey, indent: 10),
                 ),
               ],
             ),
