@@ -13,6 +13,7 @@ class _LoginScreenState extends State<LoginScreenUpdate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.white,),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         padding: EdgeInsets.all(24.0),
